@@ -37,7 +37,7 @@ HalfEdgeMesh<VertexT, NormalT>::HalfEdgeMesh( )
     m_globalIndex = 0;
     m_regionClassifier = ClassifierFactory<VertexT, NormalT>::get("Default", this);
     m_classifierType = "Default";
-    m_pointCloudManager = NULL;
+    //m_pointCloudManager = NULL; // fix this?
     m_depth = 100;
 }
 

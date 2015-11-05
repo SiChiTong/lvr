@@ -202,7 +202,7 @@ include_directories( ${SLAM6D_INCLUDE_DIR} )
 list(APPEND LVR_INSTALL_INCLUDE_DIRS ${SLAM6D_INSTALL_INCLUDE_DIR})
 
 # KINTINUOUS
-add_subdirectory(ext/kintinuous)
+#add_subdirectory(ext/kintinuous)
 include_directories(${LAS_VEGAS_SOURCE_DIR}/ext/kintinuous/kfusion/include)
 
 ##############################################################

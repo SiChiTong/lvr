@@ -295,7 +295,7 @@ public:
 	 */
 	VertexVector& getVertices() { return m_vertices; }
 	
-private:
+protected:
 
 	void checkFaceIntegreties();
 

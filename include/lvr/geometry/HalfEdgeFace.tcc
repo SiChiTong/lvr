@@ -149,15 +149,11 @@ void HalfEdgeFace<VertexT, NormalT>::getAdjacentFaces(FaceVector &adj){
 
     do
     {
-        pair = current->pair();
-        if(pair != 0)
+        if(current->hasPair() && current->pair()->hasFace())
         {
-            neighbor = pair->face();
-            if(neighbor != 0)
-            {
-                adj.push_back(neighbor);
-            }
-        }
+          adj.push_back(current->pair()->face());
+        }  
+
         current = current->next();
     } while(m_edge != current);
 
